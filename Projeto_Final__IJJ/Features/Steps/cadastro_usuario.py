@@ -5,9 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
-email = "teste14@teste.com"
-senha = "eusoumylena123"
-senha_conf = "eusoumylena123"
+#Defina aqui os dados que serão utilizado para cadastro / login
+email = "digite-email"
+senha = "digite-senha"
+senha_conf = "digite-senha"
 
 @given("que a pessoa esta acessando o site pela primeira vez")
 def go_to_page(context):
