@@ -39,7 +39,7 @@ def verify_login_text(context):
             EC.text_to_be_present_in_element((By.XPATH, "//label"), "Faça login")
         )
     except Exception as e:
-        assert False, f"'Faça login' não encontrado na página após o registro: {e}"
+        assert False, f"Usuário não criado, não foi possível redirecioná-lo para a tela de login {e}"
 
 @then("irá preencher os dados para efetuar o login")
 def fill_login_data(context):
